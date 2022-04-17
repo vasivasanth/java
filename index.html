@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h1 style="text-align:center">Calculator App</h1>
+
+        <br>
+
+        <table>
+
+            <tr>
+
+                <td colspan="3"><input type='text' id='result' class='screen' style="text-align: right;"></td>
+                <td>
+
+                    <input type='button' value='C' onclick="clearScreen()" class="clear" />
+
+                </td>
+
+            </tr>
+
+        </table>
+
+        <div class="keys">
+
+            <input type="button" value="7" class="button" id="seven" onclick="liveScreen(7)"></input>
+
+            <input type="button" value="8" class="button" id="eight" onclick="liveScreen(8)"></input>
+
+            <input type="button" value="9" class="button" id="nine" onclick="liveScreen(9)"></input>
+
+            <input type="button" value="/" class="operator" onclick="liveScreen('/')"></input>
+
+            <input type="button" value="4" class="button" id="four" onclick="liveScreen(4)"></input>
+
+            <input type="button" value="5" class="button" id="five" onclick="liveScreen(5)"></input>
+
+            <input type="button" value="6" class="button" id="six" onclick="liveScreen(6)"></input>
+
+            <input type="button" value="*" class="operator" onclick="liveScreen('*')"></input>
+
+            <input type="button" value="1" class="button" id="one" onclick="liveScreen(1)"></input>
+
+            <input type="button" value="2" class="button" id="two" onclick="liveScreen(2)"></input>
+
+            <input type="button" value="3" class="button" id="three" onclick="liveScreen(3)"></input>
+
+            <input type="button" value="-" class="operator" onclick="liveScreen('-')"></input>
+
+            <input type="button" value="0" class="button" id="zero" onclick="liveScreen(0)"></input>
+
+            <input type="button" value="." class="dot" onclick="liveScreen('.')"></input>
+
+            <input type="button" value="=" onclick="result.value = eval(result.value||null)" />
+
+            <input type="button" value="+" class="operator" onClick="display('+')"></input>
+
+        </div>
+
+    </div>
+
+
+    <script src="./script.js" async defer></script>
+</body>
+
+</html>
